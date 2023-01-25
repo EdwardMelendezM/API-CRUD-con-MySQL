@@ -1,22 +1,19 @@
 extends layout.jade 
 block content 
-    //Hola mundo gaa
-    section.container 
-        div.item.log
-            div.item 
-                h1 
-                    a(href="/")=title
+    section.container
+        include header.jade
         article.item 
             -if(data.length)
                 table.table 
                     tr
-                        td Id 
-                        td Titulo 
-                        td Año 
-                        td Puntuacion 
-                        td Poster 
-                        td  
-                        td  
+                        th Id 
+                        th Titulo 
+                        th Año 
+                        th Puntuacion 
+                        th Poster 
+                        th(colspan="2")
+                            form(method="get" action="/agregar")
+                                input.button.add(type="submit" value="Agregar")
                     -each movie in data
                         tr 
                             td #{movie.movie_id}

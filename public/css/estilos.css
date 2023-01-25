@@ -1,5 +1,5 @@
 html {background-color: #1D1D1D;}
-a,h1,label{color: #80BD01;}
+a,h1,h2,label{color: #80BD01;}
 a:hover{opacity: .75;}
 .logo{
     display: block;
@@ -29,4 +29,16 @@ a:hover{opacity: .75;}
 }
 .table tr:nth-child(odd):not(:first-child) {
     background-color: #EEE;
+}
+.button{
+    padding: .5rem 1rem;
+    color: #FFF;
+    background-color: #80BD01;
+    cursor: pointer;
+}
+.button:hover {
+    opacity: .75;
+}
+.add{
+    background-color: #0B0;
 }

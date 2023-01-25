@@ -30,5 +30,8 @@ router
         })
 
     })
+    .get("/agregar", (req, res, next) => {
+        res.render('add-movie', { title: 'Agregar Pelicula' })
+    })
     .use(error404)
 module.exports = router;
