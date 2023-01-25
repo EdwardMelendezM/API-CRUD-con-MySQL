@@ -1,0 +1,31 @@
+extends layout.jade 
+block content 
+    //Hola mundo gaa
+    section.container 
+        div.item.log
+            div.item 
+                h1 
+                    a(href="/")=title
+        article.item 
+            -if(data.length)
+                table.table 
+                    tr
+                        td Id 
+                        td Titulo 
+                        td Año 
+                        td Puntuacion 
+                        td Poster 
+                        td  
+                        td  
+                    -each movie in data
+                        tr 
+                            td #{movie.movie_id}
+                            td #{movie.title}
+                            td #{movie.release_year}
+                            td #{movie.rating}
+                            td 
+                                img.poster(src="#{movie.image}", alt="#{movie.title}")
+                            td editar 
+                            td eliminar
+            -else
+                p.error No existen peliculas

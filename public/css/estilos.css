@@ -1,0 +1,32 @@
+html {background-color: #1D1D1D;}
+a,h1,label{color: #80BD01;}
+a:hover{opacity: .75;}
+.logo{
+    display: block;
+    margin: 1rem auto;
+    width: 450px;
+    height: 150px;
+    background-image: url("../img/nodejs-monitor.png");
+    background-size: contain;
+}
+
+.error{
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #80BD01;
+    color: #fff;
+}
+.poster{max-width: 100px;}
+
+.table{width: 100%;}
+.table td, .table th{padding: 1rem;}
+.table tr:first-child{
+    background-color: #292623;
+    color: #80BD01;
+}
+.table tr:nth-child(even){
+    background-color: #CCC;
+}
+.table tr:nth-child(odd):not(:first-child) {
+    background-color: #EEE;
+}
